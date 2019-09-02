@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Modal Page
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>
+      Enter Your Name
+    </ion-label>
+    <ion-input #name></ion-input>
+  </ion-item>
+  <ion-button (click)="onSave(name.value)">save</ion-button>
+  <ion-button (click)="onSave(null)">cancel</ion-button>
+</ion-content>
